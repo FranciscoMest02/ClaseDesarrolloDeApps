@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="baseDatosLocal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Real App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzO-Vy-BMS">
+                                <rect key="frame" x="142" y="70" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WgT-52-jHf">
+                                <rect key="frame" x="30" y="119" width="330" height="413"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YJ-87-xyc">
+                                        <rect key="frame" x="9" y="16" width="314" height="158"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9P1-uH-NZP">
+                                                <rect key="frame" x="7" y="16" width="76" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingresa dato a buscar" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7YH-G8-8jI">
+                                                <rect key="frame" x="7" y="45" width="294" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16J-dW-NPL">
+                                                <rect key="frame" x="101" y="101" width="116" height="35"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Buscar dato">
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buscarDatos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jZN-Yl-Jz7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <constraints>
+                                            <constraint firstItem="7YH-G8-8jI" firstAttribute="leading" secondItem="9P1-uH-NZP" secondAttribute="leading" id="CbX-FC-Bmf"/>
+                                            <constraint firstAttribute="trailing" secondItem="7YH-G8-8jI" secondAttribute="trailing" constant="13" id="GrK-mF-HlD"/>
+                                            <constraint firstItem="16J-dW-NPL" firstAttribute="top" secondItem="7YH-G8-8jI" secondAttribute="bottom" constant="22" id="Rvt-RC-Sdm"/>
+                                            <constraint firstItem="7YH-G8-8jI" firstAttribute="top" secondItem="9P1-uH-NZP" secondAttribute="bottom" constant="8" id="WUk-13-yPI"/>
+                                            <constraint firstAttribute="trailing" secondItem="16J-dW-NPL" secondAttribute="trailing" constant="97" id="Ylq-1S-Zn8"/>
+                                            <constraint firstItem="9P1-uH-NZP" firstAttribute="top" secondItem="8YJ-87-xyc" secondAttribute="top" constant="16" id="cgm-09-GeJ"/>
+                                            <constraint firstItem="9P1-uH-NZP" firstAttribute="leading" secondItem="8YJ-87-xyc" secondAttribute="leading" constant="7" id="wch-kL-xr4"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zg6-Q4-S4b">
+                                        <rect key="frame" x="9" y="197" width="314" height="128"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insertar dato" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Wr-pB-47z">
+                                                <rect key="frame" x="10" y="17" width="294" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R6-iZ-l25">
+                                                <rect key="frame" x="96" y="76" width="132" height="35"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Agregar datos">
+                                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="agregarDatos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dmQ-SM-BUY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstItem="6R6-iZ-l25" firstAttribute="top" secondItem="5Wr-pB-47z" secondAttribute="bottom" constant="25" id="Ddv-Ou-jNR"/>
+                                            <constraint firstItem="5Wr-pB-47z" firstAttribute="centerX" secondItem="Zg6-Q4-S4b" secondAttribute="centerX" id="Fng-g7-zdK"/>
+                                            <constraint firstItem="6R6-iZ-l25" firstAttribute="leading" secondItem="Zg6-Q4-S4b" secondAttribute="leading" constant="96" id="GSv-ch-dlh"/>
+                                            <constraint firstItem="5Wr-pB-47z" firstAttribute="top" secondItem="Zg6-Q4-S4b" secondAttribute="top" constant="17" id="abF-gR-nST"/>
+                                            <constraint firstItem="5Wr-pB-47z" firstAttribute="leading" secondItem="Zg6-Q4-S4b" secondAttribute="leading" constant="10" id="nO2-W0-JFu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <constraints>
+                                    <constraint firstItem="8YJ-87-xyc" firstAttribute="leading" secondItem="WgT-52-jHf" secondAttribute="leading" constant="9" id="Gyq-PI-PpT"/>
+                                    <constraint firstAttribute="trailing" secondItem="8YJ-87-xyc" secondAttribute="trailing" constant="7" id="VhH-g2-Bu2"/>
+                                    <constraint firstItem="Zg6-Q4-S4b" firstAttribute="top" secondItem="8YJ-87-xyc" secondAttribute="bottom" constant="23" id="YJn-tB-cXS"/>
+                                    <constraint firstItem="8YJ-87-xyc" firstAttribute="leading" secondItem="Zg6-Q4-S4b" secondAttribute="leading" id="ZlK-ck-Nf8"/>
+                                    <constraint firstItem="8YJ-87-xyc" firstAttribute="trailing" secondItem="Zg6-Q4-S4b" secondAttribute="trailing" id="b4S-uN-p5f"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zg6-Q4-S4b" secondAttribute="bottom" constant="88" id="icD-Tb-Ahp"/>
+                                    <constraint firstItem="8YJ-87-xyc" firstAttribute="top" secondItem="WgT-52-jHf" secondAttribute="top" constant="16" id="vEW-9z-9c0"/>
+                                    <constraint firstAttribute="bottom" secondItem="8YJ-87-xyc" secondAttribute="bottom" constant="239" id="yQI-yN-8YO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WgT-52-jHf" secondAttribute="bottom" constant="278" id="3m5-aV-a42"/>
+                            <constraint firstItem="EzO-Vy-BMS" firstAttribute="centerX" secondItem="WgT-52-jHf" secondAttribute="centerX" id="X6j-IV-o8L"/>
+                            <constraint firstItem="EzO-Vy-BMS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="YIb-Ml-Oq7"/>
+                            <constraint firstItem="EzO-Vy-BMS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dhR-T7-ps9"/>
+                            <constraint firstItem="WgT-52-jHf" firstAttribute="top" secondItem="EzO-Vy-BMS" secondAttribute="bottom" constant="28" id="hDG-25-5FJ"/>
+                            <constraint firstItem="WgT-52-jHf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="rHd-gg-OsF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="busquedaTextField" destination="7YH-G8-8jI" id="9t0-A8-Cqn"/>
+                        <outlet property="creacionTextField" destination="5Wr-pB-47z" id="vy0-Mp-5hQ"/>
+                        <outlet property="resultadoLabel" destination="9P1-uH-NZP" id="FGu-ec-Yrl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.53846153846153" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
