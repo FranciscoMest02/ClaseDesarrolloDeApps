@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="appMultimedia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="appMultimedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +67,7 @@
         <!--Image View Controller-->
         <scene sceneID="5er-aL-Geg">
             <objects>
-                <viewController storyboardIdentifier="ImageViewController" id="4GC-Xa-W0t" customClass="ImageViewController" customModule="appMultimedia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4GC-Xa-W0t" customClass="ImageViewController" customModule="appMultimedia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EBX-QH-mga">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,7 +95,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Go back"/>
                                 <connections>
-                                    <action selector="backToMain:" destination="4GC-Xa-W0t" eventType="touchUpInside" id="HIx-Zn-Vff"/>
                                     <action selector="goBackMain:" destination="4GC-Xa-W0t" eventType="touchUpInside" id="JwG-Ul-5ut"/>
                                 </connections>
                             </button>
@@ -126,7 +125,7 @@
         <!--Video View Controller-->
         <scene sceneID="h8K-fD-Ka2">
             <objects>
-                <viewController storyboardIdentifier="VideoViewController" id="cMZ-iL-K9m" customClass="VideoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VideoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cMZ-iL-K9m" customClass="VideoViewController" customModule="appMultimedia" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gge-Ik-hLB">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,12 +139,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brW-k0-9MW">
-                                <rect key="frame" x="91" y="405" width="75" height="35"/>
+                                <rect key="frame" x="152" y="533" width="88" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go back"/>
                                 <connections>
-                                    <action selector="verVideoAhora:" destination="cMZ-iL-K9m" eventType="touchUpInside" id="oHo-f8-uYY"/>
+                                    <action selector="goBackHome:" destination="cMZ-iL-K9m" eventType="touchUpInside" id="tMN-DP-cHz"/>
                                 </connections>
                             </button>
                         </subviews>

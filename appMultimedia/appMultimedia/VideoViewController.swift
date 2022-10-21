@@ -9,6 +9,9 @@ import UIKit
 import AVKit
 
 class VideoViewController: UIViewController {
+    @IBAction func goBackHome(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
     @IBAction func verVideoAhora(_ sender: UIButton) {
         if let ruta = Bundle.main.path(forResource: "birdsVideo", ofType: "mp4")
         {

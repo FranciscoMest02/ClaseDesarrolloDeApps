@@ -9,7 +9,7 @@ import UIKit
 
 class ImageViewController: UIViewController {
     
-    @IBAction func goBackMain(_ sender: Any) {
+    @IBAction func goBackMain(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
     
